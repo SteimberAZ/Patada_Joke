@@ -193,7 +193,8 @@
                 });
             }, { threshold: 0.1 });
 
-            document.querySelectorAll('.pillar-card, .leader-text, .cta-container').forEach(el => {
+            // Select elements to reveal
+            document.querySelectorAll('.pillar-card, .leader-text, .cta-container, .leader-image-wrapper').forEach(el => {
                 el.classList.add('reveal-on-scroll');
                 observer.observe(el);
             });
